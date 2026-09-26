@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curated Works & Products | Split Horizon Folio — English RTL</title>
+  <meta name="description" content="Production-deployed web applications, design systems, and edge infrastructure. Order enterprise setups directly via Telegram." />
+  <meta property="og:title" content="Curated Works & Products | Split Horizon Folio" />
+  <meta property="og:description" content="Explore production web applications, design systems, and edge infrastructure with direct Telegram ordering." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- AMBIENT GLOW -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-spot-designer" id="spotlight-designer"></div>
+    <div class="glow-spot-coder" id="spotlight-coder"></div>
+  </div>
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <div class="brand-group">
+        <a href="index.html" class="brand-badge" title="Split Horizon Portfolio">
+          <span style="color: var(--accent-coral)">AD</span>
+          <span style="color: var(--text-muted); font-size: 0.8rem; margin: 0 2px;">/</span>
+          <span style="color: var(--accent-cyan)">DS</span>
+        </a>
+        <div class="brand-title-wrap">
+          <a href="index.html" class="brand-title">Adham Dannaway</a>
+          <span class="brand-subtitle">Curated Works Catalog</span>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Overview</a>
+        <a href="products.html" class="nav-link active">Products &amp; Works</a>
+        <a href="about.html" class="nav-link">Philosophy</a>
+        <a href="contact.html" class="nav-link">Collaboration</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="dir-toggle-btn" class="control-btn" title="Toggle RTL / LTR Layout">RTL</button>
+        <button id="theme-toggle-btn" class="control-btn" title="Toggle Theme">
+          <span class="material-symbols-outlined" style="font-size: 18px;">light_mode</span>
+        </button>
+        <button class="telegram-quick-btn trigger-telegram-order" data-product="Horizon OS Enterprise" data-scope="End-to-End">
+          <span class="material-symbols-outlined" style="font-size: 16px;">send</span>
+          <span>Order on Telegram</span>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-drawer" class="mobile-drawer">
+    <a href="index.html" class="mobile-nav-link">Overview</a>
+    <a href="products.html" class="mobile-nav-link active">Products &amp; Curated Works</a>
+    <a href="about.html" class="mobile-nav-link">Philosophy &amp; Disciplines</a>
+    <a href="contact.html" class="mobile-nav-link">Initiate Collaboration</a>
+    <button class="telegram-quick-btn trigger-telegram-order" style="width: 100%; justify-content: center; margin-top: 0.5rem;" data-product="Custom Advisory" data-scope="Advisory">
+      <span class="material-symbols-outlined" style="font-size: 18px;">send</span>
+      <span>Direct Telegram Order</span>
+    </button>
+  </div>
+
+  <main class="main-content">
+    
+    <!-- PAGE HERO -->
+    <section class="page-section" style="padding-top: 3rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">Production Artifacts &amp; Systems</span>
+          <h1 class="section-title">Dual-Vector Selected Works &amp; Products</h1>
+          <p class="section-subtitle">
+            Every product below represents an end-to-end realization: from foundational design token schemas in Figma to globally distributed edge execution on Cloudflare.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Disciplines (6)</button>
+          <button class="filter-btn" data-filter="design">Design Systems (2)</button>
+          <button class="filter-btn" data-filter="code">Edge Engineering (2)</button>
+          <button class="filter-btn" data-filter="hybrid">Hybrid Synthesis (2)</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS GRID -->
+    <section class="page-section" style="padding-top: 0;">
+      <div class="container">
+        <div class="products-grid">
+
+          <!-- PRODUCT 1: HORIZON OS -->
+          <article class="product-card" data-category="design">
+            <div class="product-media">
+              <img 
+                class="product-img" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx28paUxcBxQ-95kGqTBo3mpxg6vylaUzpHfmrLSbqoT3FoyRJ_wXhwVbqEC12ggwSGP9-1mCofHjdIvlFoCMFhFDu6xr5aPy2DR13Wk2kqlPo7wAEwCoef9oQKxBqSJoH6qokq5f5aRMh7UqmW83P6xEBwk2774FhPCwMF_ViMFKVvSJE4POhWmpIM9dVF0HvQ_0wnPWtTK8OL0eyUtSWlAVpuPDpIhNDNjsKnCBA2rbe0DxsGfUm" 
+                alt="Horizon OS Design System" 
+              />
+              <div class="media-overlay"></div>
+              <div class="media-tags">
+                <span class="media-badge" style="color: var(--accent-coral)">Design System</span>
+                <span class="media-badge" style="color: var(--accent-cyan)">Next.js 15</span>
+              </div>
+              <div class="media-version">v3.2.0 • Edge Native</div>
+            </div>
+            <div class="product-content">
+              <div>
+                <span class="product-meta-category">Cloud Workspace Ecosystem</span>
+                <h2 class="product-title">Horizon OS</h2>
+                <p class="product-desc">
+                  Next-generation cloud-native design system and workspace platform. Features an automated token pipeline that pulls W3C tokens from Figma into TypeScript and Tailwind v4 definitions on each git commit.
+                </p>
+                <div class="skill-chips" style="margin-top: 1rem; margin-bottom: 0.5rem;">
+                  <span class="chip">Figma Variables</span>
+                  <span class="chip">WCAG 2.2 AAA</span>
+                  <span class="chip">Turborepo</span>
+                  <span class="chip">Tokens Studio</span>
+                </div>
+              </div>
+              <div class="product-actions-strip">
+                <div class="product-metric">
+                  <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--accent-emerald);"></span>
+                  <span>99.8% Speed Index</span>
+                </div>
+                <button 
+                  class="btn-telegram-order trigger-telegram-order" 
+                  data-product="Horizon OS Enterprise ($4,800)" 
+                  data-scope="Design System Pipeline"
+                >
+                  <span class="material-symbols-outlined" style="font-size: 15px;">send</span>
+                  <span>Order on Telegram</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 2: AURA ANALYTICS -->
+          <article class="product-card" data-category="code">
+            <div class="product-media">
+              <img 
+                class="product-img" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCve1qGzDHmG8fKsYjCBhPJ8Rk118J9PyH0u8imnhgCLQz9Tc6vAzETolO4XEiQC0E7MxbSpSKCg2AfUf_zpeI3KIO5XfJX8uXRd-oRyJjVqDwOlwbjCbt8NbikqN57VngSM9fM2JwI4iznu1-KzvmZbIWBf20VBlmrKY5nmt2_Zfg7yoz2tkIm1MBBtXFCeVD5PZrxA7hGicdr1SaqCOILwUtryVRNvHNHc8a0Rdt4fZV23ok8fHTX" 
+                alt="Aura Analytics Real-time Dashboard" 
+              />
+              <div class="media-overlay"></div>
+              <div class="media-tags">
+                <span class="media-badge" style="color: var(--accent-cyan)">WebGL / GPU</span>
+                <span class="media-badge" style="color: var(--accent-violet)">Telemetry UI</span>
+              </div>
+              <div class="media-version">60 FPS • 1M+ Events/s</div>
+            </div>
+            <div class="product-content">
+              <div>
+                <span class="product-meta-category">High-Frequency Monitoring</span>
+                <h2 class="product-title">Aura Analytics</h2>
+                <p class="product-desc">
+                  High-frequency global telemetry dashboard with real-time WebGL charting. Synthesized complex distributed traces into intuitive, color-calibrated visual metrics for enterprise DevOps teams.
+                </p>
+                <div class="skill-chips" style="margin-top: 1rem; margin-bottom: 0.5rem;">
+                  <span class="chip">Three.js / WebGL</span>
+                  <span class="chip">Durable Objects</span>
+                  <span class="chip">ClickHouse Edge</span>
+                  <span class="chip">Protobuf</span>
+                </div>
+              </div>
+              <div class="product-actions-strip">
+                <div class="product-metric">
+                  <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--accent-emerald);"></span>
+                  <span>Zero Garbage Collection Spikes</span>
+                </div>
+                <button 
+                  class="btn-telegram-order trigger-telegram-order" 
+                  data-product="Aura Analytics Dashboard ($3,500)" 
+                  data-scope="Telemetry Engine"
+                >
+                  <span class="material-symbols-outlined" style="font-size: 15px;">send</span>
+                  <span>Order on Telegram</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 3: CHRONOS STUDIO -->
+          <article class="product-card" data-category="hybrid">
+            <div class="product-media">
+              <img 
+                class="product-img" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq2yWdby5Cj575d_xNCFADu7spyA6rJIVp-BxAWzjTKdaBagdpnH-4qFtbx0F_5vA7-R8tQwxoaZzRpiph4ERzyD1ML8tIU98dgiOmYKORgfoH6-rQWFfvruTFIRh0kOV88jyzPWx_WNt-6pzehouhManZLD5jwZujdbhRMp8ge8DbPGoEWvhOikf9c00Pn_tiCPY3XT_ezQ9IhCcCIGuM4YcXr4_WqEWoDumL1MUYjUX1GYaOqF3b" 
+                alt="Chronos Studio Synthesizer" 
+              />
+              <div class="media-overlay"></div>
+              <div class="media-tags">
+                <span class="media-badge" style="color: var(--accent-coral)">Spatial Audio</span>
+                <span class="media-badge" style="color: var(--accent-violet)">Generative Art</span>
+              </div>
+              <div class="media-version">WebAudio API • Zero Lag</div>
+            </div>
+            <div class="product-content">
+              <div>
+                <span class="product-meta-category">Generative Sound Engine</span>
+                <h2 class="product-title">Chronos Studio</h2>
+                <p class="product-desc">
+                  Spatial audio & generative art web environment for musicians. Features precision dials, harmonic frequency graphs, and tactile micro-interactions built with HTML5 Canvas and Web Audio worklets.
+                </p>
+                <div class="skill-chips" style="margin-top: 1rem; margin-bottom: 0.5rem;">
+                  <span class="chip">Web Audio API</span>
+                  <span class="chip">Canvas Shaders</span>
+                  <span class="chip">Custom Dials</span>
+                  <span class="chip">MIDI Protocol</span>
+                </div>
+              </div>
+              <div class="product-actions-strip">
+                <div class="product-metric">
+                  <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--accent-gold);"></span>
+                  <span>Awwwards Site of the Day</span>
+                </div>
+                <button 
+                  class="btn-telegram-order trigger-telegram-order" 
+                  data-product="Chronos Audio Engine ($2,900)" 
+                  data-scope="Generative Audio Suite"
+                >
+                  <span class="material-symbols-outlined" style="font-size: 15px;">send</span>
+                  <span>Order on Telegram</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 4: LUMINA CLOUD -->
+          <article class="product-card" data-category="code">
+            <div class="product-media">
+              <img 
+                class="product-img" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuACdtOc6qg60N1vT4slPCoxNyB5YZLAdfk5D13fGxD2F4qmPJXDbV5wFazQUXHOQ1bgE7jC45tVaDI8bULPC3cM9SKE3do0kVPNdPzA63qTNxbsoyKO4YuX3CfZ1lTyNV9GFAyu9A3Kds5pnhFpX7tt5D2VjtNcmfm1HPVYT6orcuK0iTvsGca5-jtVG7mOdKWFYGpQjNFFB3nWgN6Dtt6zcB0SFioxHQ-_wiTxIBw13HxpJMabdZFN" 
+                alt="Lumina Cloud Network Map" 
+              />
+              <div class="media-overlay"></div>
+              <div class="media-tags">
+                <span class="media-badge" style="color: var(--accent-cyan)">Edge Platform</span>
+                <span class="media-badge" style="color: var(--accent-blue)">CLI & Dashboard</span>
+              </div>
+              <div class="media-version">275+ Edge Points</div>
+            </div>
+            <div class="product-content">
+              <div>
+                <span class="product-meta-category">Distributed Deployment Cloud</span>
+                <h2 class="product-title">Lumina Cloud</h2>
+                <p class="product-desc">
+                  Global edge deployment orchestration tool built on Cloudflare Workers and Pages. Engineered the entire browser CLI experience alongside an ultra-clean, information-dense server topology map.
+                </p>
+                <div class="skill-chips" style="margin-top: 1rem; margin-bottom: 0.5rem;">
+                  <span class="chip">Cloudflare Workers</span>
+                  <span class="chip">Cloudflare Pages</span>
+                  <span class="chip">WASM / Rust</span>
+                  <span class="chip">Global D1 DB</span>
+                </div>
+              </div>
+              <div class="product-actions-strip">
+                <div class="product-metric">
+                  <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--accent-emerald);"></span>
+                  <span>18ms Median Latency</span>
+                </div>
+                <button 
+                  class="btn-telegram-order trigger-telegram-order" 
+                  data-product="Lumina Cloud Orchestrator ($4,200)" 
+                  data-scope="Edge Infrastructure"
+                >
+                  <span class="material-symbols-outlined" style="font-size: 15px;">send</span>
+                  <span>Order on Telegram</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 5: ALEXANDRIA DESIGN SYSTEM CORE -->
+          <article class="product-card" data-category="design">
+            <div class="product-media">
+              <img 
+                class="product-img" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHghvDrFiJPk9UziQv8M2tDOJ_9sB2_l0qIZkWazW-7g6h0qFn1iBLximJouzy60d-gNi3MIhhETEFkvak9xxMo5AiLf3lWqZO9Pj6AbfS3UiD8-Ow4ThnoZ4-m9aB7tK9QpuoHg7fxSN23z1KAfMI1ytMQiVhgUZbs8Bfyx8yuA1XcdbdkVQ2N97tBxSkqc-OVb0bcnkNTGqWlw6462NcMz7HBJkrgFLXbarhX6xJ1VXIE9azzAzbTOrdzNLU2bsrGQ" 
+                alt="Alexandria Design System" 
+              />
+              <div class="media-overlay"></div>
+              <div class="media-tags">
+                <span class="media-badge" style="color: var(--accent-coral)">Design System</span>
+                <span class="media-badge" style="color: var(--accent-gold)">Archival Tokens</span>
+              </div>
+              <div class="media-version">Editorial 4.0</div>
+            </div>
+            <div class="product-content">
+              <div>
+                <span class="product-meta-category">Editorial Craft</span>
+                <h2 class="product-title">Alexandria Design System</h2>
+                <p class="product-desc">
+                  Scholarly high-end digital publishing system pairing serif typographic cadence with strict architectural grid rules. Eliminates arbitrary hand-offs through auto-generated CSS variables and tokens.
+                </p>
+                <div class="skill-chips" style="margin-top: 1rem; margin-bottom: 0.5rem;">
+                  <span class="chip">Noto Serif System</span>
+                  <span class="chip">Dark/Light Themes</span>
+                  <span class="chip">Zero-Build HTML</span>
+                  <span class="chip">RTL-Ready</span>
+                </div>
+              </div>
+              <div class="product-actions-strip">
+                <div class="product-metric">
+                  <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--accent-coral);"></span>
+                  <span>100% Contrast Validated</span>
+                </div>
+                <button 
+                  class="btn-telegram-order trigger-telegram-order" 
+                  data-product="Bespoke Design System ($5,500)" 
+                  data-scope="Design Token Suite"
+                >
+                  <span class="material-symbols-outlined" style="font-size: 15px;">send</span>
+                  <span>Order on Telegram</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 6: SYNAPSE EDGE ORCHESTRATOR -->
+          <article class="product-card" data-category="hybrid">
+            <div class="product-media">
+              <img 
+                class="product-img" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYq0Xm11wlH3p_ZhrNfIq7DB-bd-rJZMzCiXazy9jv2R6l_njgs7WbLPLHp0QJp3E2tqK2Yzq0Z8oe-RcxtwOdbybyMGvcKwn_7Ucy4hSHBf3mzHHQgBlFa1ReePrPg0CdTiTQ4NNB6jBB3CVmMWVCtJDxjrWNfqjblSaCKe5XmTl1dUiLn1EsR1Ziutsm9lXyPEY3CmxnPKPjXgzMWtY4fav40mrAKpN00x4IOeiwDimLf571ApxR" 
+                alt="Synapse Edge Orchestrator" 
+              />
+              <div class="media-overlay"></div>
+              <div class="media-tags">
+                <span class="media-badge" style="color: var(--accent-coral)">Design System</span>
+                <span class="media-badge" style="color: var(--accent-cyan)">Cloudflare Edge</span>
+              </div>
+              <div class="media-version">Hybrid v2.1</div>
+            </div>
+            <div class="product-content">
+              <div>
+                <span class="product-meta-category">Full-Stack Synthesis</span>
+                <h2 class="product-title">Synapse Edge Framework</h2>
+                <p class="product-desc">
+                  An end-to-end framework allowing zero-friction static deployment to Cloudflare Pages with embedded serverless Telegram notifications and real-time client state management.
+                </p>
+                <div class="skill-chips" style="margin-top: 1rem; margin-bottom: 0.5rem;">
+                  <span class="chip">Drag-and-Drop Deploy</span>
+                  <span class="chip">Zero-Build Native</span>
+                  <span class="chip">Telegram Webhook API</span>
+                  <span class="chip">Sub-10ms TTFB</span>
+                </div>
+              </div>
+              <div class="product-actions-strip">
+                <div class="product-metric">
+                  <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--accent-emerald);"></span>
+                  <span>Direct Cloudflare Drag & Drop</span>
+                </div>
+                <button 
+                  class="btn-telegram-order trigger-telegram-order" 
+                  data-product="Full-Stack Cloudflare Edge App ($6,000)" 
+                  data-scope="Turnkey Deployment"
+                >
+                  <span class="material-symbols-outlined" style="font-size: 15px;">send</span>
+                  <span>Order on Telegram</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FLOATING TELEGRAM ORDER BUTTON -->
+  <aside class="floating-telegram-bubble trigger-telegram-order" data-product="Products Inquiry" data-scope="Engineering Specs">
+    <span class="material-symbols-outlined" style="font-size: 20px;">send</span>
+    <span style="font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Order on Telegram</span>
+  </aside>
+
+  <!-- TELEGRAM MODAL POPUP -->
+  <div id="telegram-modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <div class="telegram-modal">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="material-symbols-outlined" style="color: #229ed9; font-size: 24px;">send</span>
+          <div>
+            <h3 id="modal-heading" style="font-size: 1.15rem;">Telegram Order &amp; Dispatch Console</h3>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">Real-time structured payload generator for Cloudflare Pages</span>
+          </div>
+        </div>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label class="form-label">Select Product / Service</label>
+            <select id="tg-product" class="form-select">
+              <option value="Horizon OS Enterprise ($4,800)">Horizon OS Enterprise ($4,800)</option>
+              <option value="Aura Analytics Dashboard ($3,500)">Aura Analytics Dashboard ($3,500)</option>
+              <option value="Chronos Audio Engine ($2,900)">Chronos Audio Engine ($2,900)</option>
+              <option value="Lumina Cloud Orchestrator ($4,200)">Lumina Cloud Orchestrator ($4,200)</option>
+              <option value="Bespoke Design System ($5,500)">Bespoke Design System ($5,500)</option>
+              <option value="Full-Stack Cloudflare Edge App ($6,000)">Full-Stack Cloudflare Edge App ($6,000)</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label">Engagement Tier</label>
+            <select id="tg-scope" class="form-select">
+              <option value="Starter Deployment">Starter Deployment</option>
+              <option value="Full Production Engine" selected>Full Production Engine</option>
+              <option value="Enterprise Architecture">Enterprise Architecture</option>
+              <option value="Monthly Retainer Advisory">Monthly Retainer Advisory</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label class="form-label">Your Name / Organization</label>
+            <input type="text" id="tg-client-name" class="form-input" placeholder="Elena Rostova (Acme Labs)" />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label">Your Telegram @Handle or Email</label>
+            <input type="text" id="tg-client-handle" class="form-input" placeholder="@elena_rostova" />
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label class="form-label">Estimated Budget</label>
+            <select id="tg-budget" class="form-select">
+              <option value="$2,500 - $5,000">$2,500 - $5,000</option>
+              <option value="$5,000 - $15,000" selected>$5,000 - $15,000</option>
+              <option value="$15,000 - $35,000">$15,000 - $35,000</option>
+              <option value="$35,000+ Enterprise">$35,000+ Enterprise</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label">Delivery Timeline</label>
+            <select id="tg-timeline" class="form-select">
+              <option value="Urgent (1-2 Weeks)">Urgent (1-2 Weeks)</option>
+              <option value="Standard (2-4 Weeks)" selected>Standard (2-4 Weeks)</option>
+              <option value="Quarterly Roadmap">Quarterly Roadmap</option>
+              <option value="Flexible Schedule">Flexible Schedule</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label">Project Requirements / Brief</label>
+          <textarea id="tg-notes" rows="2" class="form-textarea" placeholder="Detail tech stack preferences, design token requirements, or edge worker features..."></textarea>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label">Target Telegram Recipient Username</label>
+          <input type="text" id="tg-username" class="form-input" value="AlexandriaAdhamDev" placeholder="Username without @" />
+        </div>
+
+        <div>
+          <label class="form-label" style="display: flex; justify-content: space-between;">
+            <span>Live Telegram Order Payload Preview</span>
+            <span style="color: var(--accent-cyan); font-weight: normal;">Auto-generated</span>
+          </label>
+          <pre id="telegram-payload-preview" class="payload-preview-box"></pre>
+        </div>
+
+        <div class="modal-actions">
+          <button id="open-telegram-btn" class="btn-open-telegram">
+            <span class="material-symbols-outlined" style="font-size: 18px;">send</span>
+            <span>🚀 Open in Telegram App</span>
+          </button>
+          <button id="copy-payload-btn" class="btn-copy-payload">
+            <span class="material-symbols-outlined" style="font-size: 18px;">content_copy</span>
+            <span>Copy Order Payload</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div style="display: flex; flex-direction: column; gap: 0.35rem;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent-emerald);"></span>
+          <span>PARIS / AMSTERDAM</span>
+          <span style="color: var(--border-subtle);">•</span>
+          <span class="font-mono" style="color: var(--text-main);">UTC+1</span>
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-muted);">
+          © 2025 AD / DevSign. Alexandria Editorial Design System. Zero-Build Cloudflare Pages Static Edition.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="footer-link">Dribbble</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="https://figma.com" target="_blank" rel="noopener noreferrer" class="footer-link">Figma</a>
+        <a href="https://t.me/AlexandriaAdhamDev" target="_blank" rel="noopener noreferrer" class="footer-link" style="color: #229ed9;">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Split Horizon Folio | Designer & Coder — English RTL Edition</title>
+  <meta name="description" content="Dual-discipline portfolio bridging aesthetic craft and algorithmic rigor. English RTL website ready for Cloudflare Pages drag & drop deployment with instant Telegram ordering." />
+  <meta property="og:title" content="Split Horizon Folio | Designer & Coder" />
+  <meta property="og:description" content="Dual-discipline portfolio bridging aesthetic craft and algorithmic rigor with instant Telegram ordering." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, Noto Serif, Inter, Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Zero-Build Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- AMBIENT GLOW SPOTLIGHTS -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-spot-designer" id="spotlight-designer"></div>
+    <div class="glow-spot-coder" id="spotlight-coder"></div>
+  </div>
+
+  <!-- SITE HEADER (RTL ORIENTED: BRAND ON RIGHT, ACTIONS ON LEFT) -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <!-- Right: Brand Logo & Status -->
+      <div class="brand-group">
+        <a href="index.html" class="brand-badge" title="Split Horizon Portfolio">
+          <span style="color: var(--accent-coral)">AD</span>
+          <span style="color: var(--text-muted); font-size: 0.8rem; margin: 0 2px;">/</span>
+          <span style="color: var(--accent-cyan)">DS</span>
+        </a>
+        <div class="brand-title-wrap">
+          <a href="index.html" class="brand-title">Adham Dannaway</a>
+          <span class="brand-subtitle">DevSign Alexandria Folio</span>
+        </div>
+        <div class="status-chip" style="display: none;">
+          <span class="pulse-dot"></span>
+          <span>Edge Active</span>
+        </div>
+      </div>
+
+      <!-- Center: Navigation Menu -->
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Overview</a>
+        <a href="products.html" class="nav-link">Products & Works</a>
+        <a href="about.html" class="nav-link">Philosophy</a>
+        <a href="contact.html" class="nav-link">Collaboration</a>
+      </nav>
+
+      <!-- Left: Interactive Controls (Theme, Direction, Telegram Order) -->
+      <div class="nav-actions">
+        <!-- RTL / LTR Direction Toggle -->
+        <button id="dir-toggle-btn" class="control-btn" title="Toggle RTL / LTR Layout">RTL</button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button id="theme-toggle-btn" class="control-btn" title="Toggle Theme">
+          <span class="material-symbols-outlined" style="font-size: 18px;">light_mode</span>
+        </button>
+
+        <!-- Instant Telegram Order Quick Button -->
+        <button class="telegram-quick-btn trigger-telegram-order" data-product="Horizon OS Enterprise" data-scope="End-to-End">
+          <span class="material-symbols-outlined" style="font-size: 16px;">send</span>
+          <span>Order on Telegram</span>
+        </button>
+
+        <!-- Mobile Drawer Toggle -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-drawer" class="mobile-drawer">
+    <a href="index.html" class="mobile-nav-link active">Overview</a>
+    <a href="products.html" class="mobile-nav-link">Products & Curated Works</a>
+    <a href="about.html" class="mobile-nav-link">Philosophy & Disciplines</a>
+    <a href="contact.html" class="mobile-nav-link">Initiate Collaboration</a>
+    <button class="telegram-quick-btn trigger-telegram-order" style="width: 100%; justify-content: center; margin-top: 0.5rem;" data-product="Custom Advisory" data-scope="Advisory">
+      <span class="material-symbols-outlined" style="font-size: 18px;">send</span>
+      <span>Direct Telegram Order</span>
+    </button>
+  </div>
+
+  <!-- MAIN VIEWPORT CONTENT -->
+  <main class="main-content">
+    
+    <!-- SECTION 1: SPLIT HORIZON HERO -->
+    <section class="hero-section">
+      <div class="container">
+        <!-- Meta Top Strip -->
+        <div class="hero-meta-strip">
+          <div class="meta-status">
+            <span class="pulse-dot"></span>
+            <span>Live in Amsterdam & Paris • Cloudflare Edge Active</span>
+          </div>
+          <div class="dual-badge">
+            <span class="material-symbols-outlined" style="color: var(--accent-coral); font-size: 16px;">palette</span>
+            <span style="color: var(--accent-coral)">DESIGN</span>
+            <span style="color: var(--text-muted)">✕</span>
+            <span style="color: var(--accent-cyan)">SYSTEMS</span>
+            <span class="material-symbols-outlined" style="color: var(--accent-cyan); font-size: 16px;">terminal</span>
+          </div>
+        </div>
+
+        <!-- 3-Column Split Stage -->
+        <div class="hero-split-grid">
+          
+          <!-- RIGHT COLUMN (In RTL): CREATIVE DISCIPLINE (DESIGNER) -->
+          <div class="discipline-card designer">
+            <div class="card-tag designer">
+              <span class="material-symbols-outlined" style="font-size: 14px;">auto_awesome</span>
+              <span>Creative Discipline</span>
+            </div>
+            <h1 class="card-heading">
+              DESIGNER <span style="display: block; font-size: 1.5rem; font-weight: 400; font-style: italic; color: var(--text-muted);">&amp; Curator</span>
+            </h1>
+            <p class="card-desc">
+              Crafting intuitive interfaces, sculptural brand identities, and high-fidelity, component-driven design systems with uncompromising craft.
+            </p>
+            <div class="skill-chips">
+              <span class="chip">Figma Variables</span>
+              <span class="chip">Motion Choreography</span>
+              <span class="chip">Micro-Typography</span>
+              <span class="chip">Tokens / W3C</span>
+            </div>
+            <div>
+              <a href="products.html" class="btn-primary designer">
+                <span>Explore Design Artifacts</span>
+                <span class="material-symbols-outlined" style="font-size: 16px;">arrow_back</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- CENTER COLUMN: DUAL PORTRAIT SHOWCASE (3D PARALLAX & SWITCHABLE MODES) -->
+          <div class="avatar-stage">
+            <div class="avatar-halo"></div>
+            
+            <div class="avatar-frame" id="split-avatar-card">
+              <div class="avatar-inner">
+                <img 
+                  id="hero-portrait-img"
+                  class="avatar-img" 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYq0Xm11wlH3p_ZhrNfIq7DB-bd-rJZMzCiXazy9jv2R6l_njgs7WbLPLHp0QJp3E2tqK2Yzq0Z8oe-RcxtwOdbybyMGvcKwn_7Ucy4hSHBf3mzHHQgBlFa1ReePrPg0CdTiTQ4NNB6jBB3CVmMWVCtJDxjrWNfqjblSaCKe5XmTl1dUiLn1EsR1Ziutsm9lXyPEY3CmxnPKPjXgzMWtY4fav40mrAKpN00x4IOeiwDimLf571ApxR" 
+                  alt="Split Horizon Persona — Designer & Developer" 
+                />
+
+                <!-- Center Synthesis Pin -->
+                <div class="synthesis-pin">
+                  <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-coral);"></span>
+                  <span>Synthesis</span>
+                  <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-cyan);"></span>
+                </div>
+
+                <!-- Floating Badges -->
+                <div class="vector-badge designer">
+                  <div class="badge-label" style="color: var(--accent-coral)">
+                    <span style="width: 5px; height: 5px; border-radius: 50%; background: var(--accent-coral)"></span>
+                    <span>Aesthetic Vector</span>
+                  </div>
+                  <div class="badge-text">Design Systems & Direction</div>
+                </div>
+
+                <div class="vector-badge coder">
+                  <div class="badge-label" style="color: var(--accent-cyan)">
+                    <span style="width: 5px; height: 5px; border-radius: 50%; background: var(--accent-cyan)"></span>
+                    <span>Algorithmic Rigor</span>
+                  </div>
+                  <div class="badge-text">Distributed Edge Engines</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Portrait Switcher Bar -->
+            <div class="portrait-switch-bar">
+              <button class="portrait-btn active" data-portrait="dual-cyber">Dual Cyber Portrait</button>
+              <button class="portrait-btn" data-portrait="executive-holo">Executive Holo Display</button>
+            </div>
+          </div>
+
+          <!-- LEFT COLUMN (In RTL): SYSTEMS DISCIPLINE (CODER) -->
+          <div class="discipline-card coder">
+            <div class="card-tag coder">
+              <span class="material-symbols-outlined" style="font-size: 14px;">terminal</span>
+              <span>Systems Engineering</span>
+            </div>
+            <h1 class="card-heading">
+              &lt;CODER /&gt; <span style="display: block; font-size: 1.5rem; font-weight: 400; font-style: italic; color: var(--text-muted);">Architect</span>
+            </h1>
+            <p class="card-desc">
+              Architecting resilient, hyper-performant web applications, low-latency Cloudflare Edge Workers, and distributed data pipelines with mathematical rigor.
+            </p>
+            <div class="skill-chips">
+              <span class="chip">TypeScript v5</span>
+              <span class="chip">Next.js App Router</span>
+              <span class="chip">Workers &amp; WASM</span>
+              <span class="chip">Tailwind CSS</span>
+            </div>
+            <div>
+              <a href="products.html" class="btn-primary coder">
+                <span class="material-symbols-outlined" style="font-size: 16px;">terminal</span>
+                <span>Inspect Production Repos</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- QUICK BENCHMARK STATS STRIP -->
+        <div class="stats-strip">
+          <div class="stat-item">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Years Combined Craft</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" style="color: var(--accent-coral)">42</span>
+            <span class="stat-label">Shipped Full-Stack Products</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" style="color: var(--accent-cyan)">99.9%</span>
+            <span class="stat-label">Core Web Vitals Metric</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" style="color: var(--accent-violet)">300k+</span>
+            <span class="stat-label">Design Tokens Orchestrated</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: THE DUAL SYNERGY PHILOSOPHY -->
+    <section class="page-section" id="philosophy">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Philosophy & Convergence</span>
+          <h2 class="section-title">Bridging the Abyss Between Aesthetic Intent and Computational Reality.</h2>
+          <p class="section-subtitle">
+            Most digital products suffer in translation. By simultaneously holding the mental model of a product designer and a systems architect, zero fidelity is lost from canvas to client runtime.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- As a Product Designer Card -->
+          <div class="bento-card">
+            <div>
+              <div class="bento-icon-wrap designer">
+                <span class="material-symbols-outlined">draw</span>
+              </div>
+              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; color: var(--accent-coral);">Humanistic Vector</span>
+              <h3 class="bento-card-title">As a Product Designer</h3>
+              <p style="font-size: 0.95rem; line-height: 1.65; color: var(--text-muted);">
+                I obsess over spatial tension, tactile affordance, visual balance, accessible color spaces, and choreographing seamless micro-moments that instill genuine delight in everyday human workflows.
+              </p>
+            </div>
+            <div class="bento-checklist">
+              <div class="check-item">
+                <span>Bespoke Design Systems (WCAG AAA Standards)</span>
+                <span class="material-symbols-outlined" style="color: var(--accent-coral); font-size: 20px;">check_circle</span>
+              </div>
+              <div class="check-item">
+                <span>Human-Centered Heuristic Architecture</span>
+                <span class="material-symbols-outlined" style="color: var(--accent-coral); font-size: 20px;">check_circle</span>
+              </div>
+              <div class="check-item">
+                <span>Fluid Motion Physics & Spatial Hierarchy</span>
+                <span class="material-symbols-outlined" style="color: var(--accent-coral); font-size: 20px;">check_circle</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- As a Systems Engineer Card -->
+          <div class="bento-card">
+            <div>
+              <div class="bento-icon-wrap coder">
+                <span class="material-symbols-outlined">memory</span>
+              </div>
+              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; color: var(--accent-cyan);">Algorithmic Vector</span>
+              <h3 class="bento-card-title">As a Systems Engineer</h3>
+              <p style="font-size: 0.95rem; line-height: 1.65; color: var(--text-muted);">
+                I structure composable, type-safe software architectures, zero-cost abstractions, edge-rendered compute, high-throughput caching policies, and sub-100ms database synchronization cycles.
+              </p>
+            </div>
+            <div class="bento-checklist">
+              <div class="check-item">
+                <span>Strict TypeScript, Next.js & Server Actions</span>
+                <span class="material-symbols-outlined" style="color: var(--accent-cyan); font-size: 20px;">check_circle</span>
+              </div>
+              <div class="check-item">
+                <span>Cloudflare Workers, Durable Objects & D1</span>
+                <span class="material-symbols-outlined" style="color: var(--accent-cyan); font-size: 20px;">check_circle</span>
+              </div>
+              <div class="check-item">
+                <span>Sub-millisecond Edge Response Benchmarks</span>
+                <span class="material-symbols-outlined" style="color: var(--accent-cyan); font-size: 20px;">check_circle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: FEATURED PRODUCTION DEPLOYMENTS -->
+    <section class="page-section" id="featured-products">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Production Deployments</span>
+          <h2 class="section-title">Dual-Vector Selected Works</h2>
+          <p class="section-subtitle">
+            Engineered from blank artboard to distributed edge compute. Order customized deployments instantly via Telegram.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          
+          <!-- PRODUCT 1: HORIZON OS -->
+          <article class="product-card" data-category="design">
+            <div class="product-media">
+              <img 
+                class="product-img" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx28paUxcBxQ-95kGqTBo3mpxg6vylaUzpHfmrLSbqoT3FoyRJ_wXhwVbqEC12ggwSGP9-1mCofHjdIvlFoCMFhFDu6xr5aPy2DR13Wk2kqlPo7wAEwCoef9oQKxBqSJoH6qokq5f5aRMh7UqmW83P6xEBwk2774FhPCwMF_ViMFKVvSJE4POhWmpIM9dVF0HvQ_0wnPWtTK8OL0eyUtSWlAVpuPDpIhNDNjsKnCBA2rbe0DxsGfUm" 
+                alt="Horizon OS Design System UI" 
+              />
+              <div class="media-overlay"></div>
+              <div class="media-tags">
+                <span class="media-badge" style="color: var(--accent-coral)">Design Lead</span>
+                <span class="media-badge" style="color: var(--accent-cyan)">Core Engine</span>
+              </div>
+              <div class="media-version">v3.2.0 • Edge Native</div>
+            </div>
+            <div class="product-content">
+              <div>
+                <span class="product-meta-category">Cloud Workspace Ecosystem</span>
+                <h3 class="product-title">Horizon OS</h3>
+                <p class="product-desc">
+                  Next-generation cloud-native design system and workspace platform. Built with a unified design token pipeline synchronized directly from Figma into Next.js components via automated GitHub Actions.
+                </p>
+              </div>
+              <div class="product-actions-strip">
+                <div class="product-metric">
+                  <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--accent-emerald);"></span>
+                  <span>99.8% Speed Index</span>
+                </div>
+                <button 
+                  class="btn-telegram-order trigger-telegram-order" 
+                  data-product="Horizon OS Enterprise" 
+                  data-scope="Design System Pipeline"
+                >
+                  <span class="material-symbols-outlined" style="font-size: 15px;">send</span>
+                  <span>Order on Telegram</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 2: AURA ANALYTICS -->
+          <article class="product-card" data-category="code">
+            <div class="product-media">
+              <img 
+                class="product-img" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCve1qGzDHmG8fKsYjCBhPJ8Rk118J9PyH0u8imnhgCLQz9Tc6vAzETolO4XEiQC0E7MxbSpSKCg2AfUf_zpeI3KIO5XfJX8uXRd-oRyJjVqDwOlwbjCbt8NbikqN57VngSM9fM2JwI4iznu1-KzvmZbIWBf20VBlmrKY5nmt2_Zfg7yoz2tkIm1MBBtXFCeVD5PZrxA7hGicdr1SaqCOILwUtryVRNvHNHc8a0Rdt4fZV23ok8fHTX" 
+                alt="Aura Analytics Dashboard" 
+              />
+              <div class="media-overlay"></div>
+              <div class="media-tags">
+                <span class="media-badge" style="color: var(--accent-cyan)">WebGL / GPU</span>
+                <span class="media-badge" style="color: var(--accent-violet)">Telemetry UI</span>
+              </div>
+              <div class="media-version">60 FPS • 1M+ Events/s</div>
+            </div>
+            <div class="product-content">
+              <div>
+                <span class="product-meta-category">High-Frequency Monitoring</span>
+                <h3 class="product-title">Aura Analytics</h3>
+                <p class="product-desc">
+                  High-frequency global telemetry dashboard with real-time WebGL charting. Synthesized complex distributed traces into intuitive, color-calibrated visual metrics for enterprise DevOps teams.
+                </p>
+              </div>
+              <div class="product-actions-strip">
+                <div class="product-metric">
+                  <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--accent-emerald);"></span>
+                  <span>Custom WebGL Shaders</span>
+                </div>
+                <button 
+                  class="btn-telegram-order trigger-telegram-order" 
+                  data-product="Aura Analytics Dashboard" 
+                  data-scope="Telemetry & WebGL Engine"
+                >
+                  <span class="material-symbols-outlined" style="font-size: 15px;">send</span>
+                  <span>Order on Telegram</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 3: CHRONOS STUDIO -->
+          <article class="product-card" data-category="hybrid">
+            <div class="product-media">
+              <img 
+                class="product-img" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq2yWdby5Cj575d_xNCFADu7spyA6rJIVp-BxAWzjTKdaBagdpnH-4qFtbx0F_5vA7-R8tQwxoaZzRpiph4ERzyD1ML8tIU98dgiOmYKORgfoH6-rQWFfvruTFIRh0kOV88jyzPWx_WNt-6pzehouhManZLD5jwZujdbhRMp8ge8DbPGoEWvhOikf9c00Pn_tiCPY3XT_ezQ9IhCcCIGuM4YcXr4_WqEWoDumL1MUYjUX1GYaOqF3b" 
+                alt="Chronos Studio Synthesizer" 
+              />
+              <div class="media-overlay"></div>
+              <div class="media-tags">
+                <span class="media-badge" style="color: var(--accent-coral)">Spatial Audio</span>
+                <span class="media-badge" style="color: var(--accent-violet)">Generative Art</span>
+              </div>
+              <div class="media-version">WebAudio API • Zero Lag</div>
+            </div>
+            <div class="product-content">
+              <div>
+                <span class="product-meta-category">Generative Sound Engine</span>
+                <h3 class="product-title">Chronos Studio</h3>
+                <p class="product-desc">
+                  Spatial audio & generative art web environment for musicians. Features precision dials, harmonic frequency graphs, and tactile micro-interactions built with HTML5 Canvas and Web Audio worklets.
+                </p>
+              </div>
+              <div class="product-actions-strip">
+                <div class="product-metric">
+                  <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--accent-gold);"></span>
+                  <span>Awwwards Site of the Day</span>
+                </div>
+                <button 
+                  class="btn-telegram-order trigger-telegram-order" 
+                  data-product="Chronos Studio Engine" 
+                  data-scope="WebAudio & Canvas Architecture"
+                >
+                  <span class="material-symbols-outlined" style="font-size: 15px;">send</span>
+                  <span>Order on Telegram</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 4: LUMINA CLOUD -->
+          <article class="product-card" data-category="code">
+            <div class="product-media">
+              <img 
+                class="product-img" 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuACdtOc6qg60N1vT4slPCoxNyB5YZLAdfk5D13fGxD2F4qmPJXDbV5wFazQUXHOQ1bgE7jC45tVaDI8bULPC3cM9SKE3do0kVPNdPzA63qTNxbsoyKO4YuX3CfZ1lTyNV9GFAyu9A3Kds5pnhFpX7tt5D2VjtNcmfm1HPVYT6orcuK0iTvsGca5-jtVG7mOdKWFYGpQjNFFB3nWgN6Dtt6zcB0SFioxHQ-_wiTxIBw13HxpJMabdZFN" 
+                alt="Lumina Cloud Network Map" 
+              />
+              <div class="media-overlay"></div>
+              <div class="media-tags">
+                <span class="media-badge" style="color: var(--accent-cyan)">Edge Platform</span>
+                <span class="media-badge" style="color: var(--accent-blue)">CLI & Dashboard</span>
+              </div>
+              <div class="media-version">275+ Edge Points</div>
+            </div>
+            <div class="product-content">
+              <div>
+                <span class="product-meta-category">Distributed Deployment Cloud</span>
+                <h3 class="product-title">Lumina Cloud</h3>
+                <p class="product-desc">
+                  Global edge deployment orchestration tool built on Cloudflare Workers and Pages. Engineered the entire browser CLI experience alongside an ultra-clean, information-dense server topology map.
+                </p>
+              </div>
+              <div class="product-actions-strip">
+                <div class="product-metric">
+                  <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--accent-emerald);"></span>
+                  <span>18ms Median Latency</span>
+                </div>
+                <button 
+                  class="btn-telegram-order trigger-telegram-order" 
+                  data-product="Lumina Cloud Orchestrator" 
+                  data-scope="Cloudflare Edge Infrastructure"
+                >
+                  <span class="material-symbols-outlined" style="font-size: 15px;">send</span>
+                  <span>Order on Telegram</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="products.html" class="btn-primary coder" style="padding: 0.85rem 2.2rem;">
+            <span>View All Products &amp; Repos</span>
+            <span class="material-symbols-outlined" style="font-size: 18px;">arrow_back</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: SKILLS & CAPABILITY MATRIX -->
+    <section class="page-section" id="skills-overview">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Dual Stack Capability Matrix</span>
+          <h2 class="section-title">Disciplined In Both Hemispheres</h2>
+          <p class="section-subtitle">
+            Every tool is mastered to production execution depth. Zero reliance on hand-off friction.
+          </p>
+        </div>
+
+        <div class="skills-columns">
+          
+          <!-- Design Stack Column -->
+          <div class="skill-box">
+            <div class="skill-header">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="material-symbols-outlined" style="color: var(--accent-coral)">brush</span>
+                <h3 style="font-size: 1.25rem;">Design Stack &amp; Craft</h3>
+              </div>
+              <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--accent-coral)">Figma &amp; Tokens</span>
+            </div>
+
+            <div class="skill-meter-group">
+              <div class="meter-item">
+                <div class="meter-label-row">
+                  <span>Design Systems Architecture (Figma Variants &amp; Tokens)</span>
+                  <span class="font-mono">98%</span>
+                </div>
+                <div class="meter-track">
+                  <div class="meter-fill designer" style="width: 98%;"></div>
+                </div>
+              </div>
+
+              <div class="meter-item">
+                <div class="meter-label-row">
+                  <span>UI/UX Spatial Choreography &amp; Prototyping</span>
+                  <span class="font-mono">95%</span>
+                </div>
+                <div class="meter-track">
+                  <div class="meter-fill designer" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <div class="meter-item">
+                <div class="meter-label-row">
+                  <span>Typography, Font Engineering &amp; Micro-Hierarchy</span>
+                  <span class="font-mono">94%</span>
+                </div>
+                <div class="meter-track">
+                  <div class="meter-fill designer" style="width: 94%;"></div>
+                </div>
+              </div>
+
+              <div class="meter-item">
+                <div class="meter-label-row">
+                  <span>Accessibility (WCAG 2.2 AAA Standards &amp; Contrast)</span>
+                  <span class="font-mono">96%</span>
+                </div>
+                <div class="meter-track">
+                  <div class="meter-fill designer" style="width: 96%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <span class="chip">Auto-Layout v5</span>
+              <span class="chip">Spline 3D</span>
+              <span class="chip">Principle Motion</span>
+              <span class="chip">Framer Motion</span>
+              <span class="chip">Vector Artboards</span>
+            </div>
+          </div>
+
+          <!-- Engineering Stack Column -->
+          <div class="skill-box">
+            <div class="skill-header">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span class="material-symbols-outlined" style="color: var(--accent-cyan)">code</span>
+                <h3 style="font-size: 1.25rem;">Engineering Stack &amp; Runtime</h3>
+              </div>
+              <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--accent-cyan)">Node &amp; Edge</span>
+            </div>
+
+            <div class="skill-meter-group">
+              <div class="meter-item">
+                <div class="meter-label-row">
+                  <span>TypeScript, React 19 &amp; Next.js App Router</span>
+                  <span class="font-mono">99%</span>
+                </div>
+                <div class="meter-track">
+                  <div class="meter-fill coder" style="width: 99%;"></div>
+                </div>
+              </div>
+
+              <div class="meter-item">
+                <div class="meter-label-row">
+                  <span>Cloudflare Workers, Durable Objects &amp; KV Edge</span>
+                  <span class="font-mono">94%</span>
+                </div>
+                <div class="meter-track">
+                  <div class="meter-fill coder" style="width: 94%;"></div>
+                </div>
+              </div>
+
+              <div class="meter-item">
+                <div class="meter-label-row">
+                  <span>Tailwind CSS &amp; Fluid Responsive Geometry</span>
+                  <span class="font-mono">98%</span>
+                </div>
+                <div class="meter-track">
+                  <div class="meter-fill coder" style="width: 98%;"></div>
+                </div>
+              </div>
+
+              <div class="meter-item">
+                <div class="meter-label-row">
+                  <span>WebGL, Canvas Shaders &amp; High-Frequency Telemetry</span>
+                  <span class="font-mono">88%</span>
+                </div>
+                <div class="meter-track">
+                  <div class="meter-fill coder" style="width: 88%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <span class="chip">GraphQL</span>
+              <span class="chip">PostgreSQL / D1</span>
+              <span class="chip">Docker</span>
+              <span class="chip">CI/CD Pipelines</span>
+              <span class="chip">Rust / WASM</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CAREER CHRONOLOGY TEASER -->
+    <section class="page-section" id="chronology-preview">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Evolution</span>
+          <h2 class="section-title">Staff Dual-Track Chronology</h2>
+          <p class="section-subtitle">
+            Progressing simultaneously through senior leadership tiers across visual design systems and distributed application engineering.
+          </p>
+        </div>
+
+        <div class="timeline-list">
+          <div class="timeline-item">
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.35rem;">
+                <span class="timeline-role-badge design">DESIGN</span>
+                <span style="font-size: 0.75rem; color: var(--text-muted)">• 2022 — PRESENT</span>
+              </div>
+              <h3 style="font-size: 1.25rem;">Staff Product Designer &amp; Design Technologist</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); max-width: 600px; margin-top: 0.25rem;">
+                Spearheading core multi-brand design systems, token architecture, and prototyping next-generation spatial computing interfaces for European enterprise clients.
+              </p>
+            </div>
+            <div style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary)">
+              Amsterdam / Remote
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.35rem;">
+                <span class="timeline-role-badge code">CODE</span>
+                <span style="font-size: 0.75rem; color: var(--text-muted)">• 2020 — 2022</span>
+              </div>
+              <h3 style="font-size: 1.25rem;">Principal Frontend &amp; Edge Systems Architect</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); max-width: 600px; margin-top: 0.25rem;">
+                Engineered low-latency web interfaces, headless architecture, and micro-frontends serving over 8M monthly active users across global CDN regions.
+              </p>
+            </div>
+            <div style="font-size: 0.8rem; font-weight: 600; color: var(--text-secondary)">
+              Paris / Hybrid
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="about.html" class="btn-primary coder">
+            <span>Read Complete Manifesto &amp; Timeline</span>
+            <span class="material-symbols-outlined" style="font-size: 18px;">arrow_back</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: INITIATE COLLABORATION & TELEGRAM DISPATCH -->
+    <section class="page-section" id="contact-overview">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Left Info & Status Panel -->
+          <div class="contact-info-panel">
+            <div>
+              <div class="section-tag" style="margin-bottom: 0.5rem;">Q2/Q3 Engagement Window Open</div>
+              <h2 class="section-title" style="text-align: right; margin-bottom: 0.75rem;">Initiate Collaboration</h2>
+              <p style="font-size: 0.95rem; line-height: 1.65; color: var(--text-muted);">
+                Whether you require a comprehensive design system built from scratch, or an elite full-stack engineer who doesn't compromise on design fidelity, let's connect.
+              </p>
+            </div>
+
+            <!-- Live Status & SLA Card -->
+            <div class="live-sla-box">
+              <div class="sla-row">
+                <span style="color: var(--text-muted); text-transform: uppercase;">Active Coordinates</span>
+                <span class="font-mono" style="color: var(--accent-cyan); font-weight: 700;">52.3676° N, 4.9041° E</span>
+              </div>
+              <div class="sla-row">
+                <span style="color: var(--text-muted); text-transform: uppercase;">Time Zone</span>
+                <span class="font-mono">CET / Amsterdam (UTC+1)</span>
+              </div>
+              <div class="sla-row">
+                <span style="color: var(--text-muted); text-transform: uppercase;">Response SLA</span>
+                <span class="font-mono" style="color: var(--accent-emerald); font-weight: 700;">&lt; 12 Hours</span>
+              </div>
+            </div>
+
+            <!-- Direct Telegram Box -->
+            <div class="live-sla-box" style="background: rgba(34, 158, 217, 0.08); border-color: rgba(34, 158, 217, 0.3);">
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <span class="material-symbols-outlined" style="font-size: 28px; color: #229ed9;">chat</span>
+                <div>
+                  <h4 style="font-size: 1rem; color: var(--text-main);">Instant Telegram Order Dispatch</h4>
+                  <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
+                    Skip email queues. Generate structured project brief with pricing.
+                  </p>
+                </div>
+              </div>
+              <button class="telegram-quick-btn trigger-telegram-order" style="width: 100%; justify-content: center; margin-top: 0.5rem;" data-product="End-to-End Build" data-scope="Hybrid">
+                <span class="material-symbols-outlined" style="font-size: 18px;">send</span>
+                <span>Open Telegram Order Console</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Form Panel -->
+          <div class="form-panel">
+            <form id="contact-form">
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label class="form-label">Your Name</label>
+                  <input type="text" class="form-input" placeholder="Elena Rostova" required />
+                </div>
+                <div class="form-field">
+                  <label class="form-label">Work Email</label>
+                  <input type="email" class="form-input" placeholder="elena@company.io" required />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label">Project Scope</label>
+                <div class="scope-options">
+                  <label class="scope-btn active">
+                    <input type="radio" name="scope" value="design" checked />
+                    <span>Design System</span>
+                  </label>
+                  <label class="scope-btn">
+                    <input type="radio" name="scope" value="code" />
+                    <span>Full-Stack App</span>
+                  </label>
+                  <label class="scope-btn">
+                    <input type="radio" name="scope" value="hybrid" />
+                    <span>Both (End-to-End)</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label">Project Architecture &amp; Objectives</label>
+                <textarea rows="4" class="form-textarea" placeholder="Describe your product timeline, tech stack prerequisites, or design requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary coder" style="width: 100%; justify-content: center; padding: 0.9rem;">
+                <span class="material-symbols-outlined" style="font-size: 18px;">rocket_launch</span>
+                <span>Transmit Signal to Edge</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FLOATING TELEGRAM ORDER BUTTON (BOTTOM-LEFT IN RTL) -->
+  <aside class="floating-telegram-bubble trigger-telegram-order" data-product="Direct Telegram Advisory" data-scope="Architecture Sync" aria-label="Direct Telegram Order">
+    <span class="material-symbols-outlined" style="font-size: 20px;">send</span>
+    <span style="font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;">Order on Telegram</span>
+  </aside>
+
+  <!-- TELEGRAM ORDERING MODAL POPUP -->
+  <div id="telegram-modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <div class="telegram-modal">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="material-symbols-outlined" style="color: #229ed9; font-size: 24px;">send</span>
+          <div>
+            <h3 id="modal-heading" style="font-size: 1.15rem;">Telegram Order &amp; Dispatch Console</h3>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">Real-time structured payload generator for Cloudflare Pages</span>
+          </div>
+        </div>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label class="form-label">Select Product / Service</label>
+            <select id="tg-product" class="form-select">
+              <option value="Horizon OS Enterprise ($4,800)">Horizon OS Enterprise ($4,800)</option>
+              <option value="Aura Analytics Dashboard ($3,500)">Aura Analytics Dashboard ($3,500)</option>
+              <option value="Chronos Audio Engine ($2,900)">Chronos Audio Engine ($2,900)</option>
+              <option value="Lumina Cloud Orchestrator ($4,200)">Lumina Cloud Orchestrator ($4,200)</option>
+              <option value="Bespoke Design System ($5,500)">Bespoke Design System ($5,500)</option>
+              <option value="Full-Stack Cloudflare Edge App ($6,000)">Full-Stack Cloudflare Edge App ($6,000)</option>
+              <option value="Staff Advisory Retainer ($2,500/mo)">Staff Advisory Retainer ($2,500/mo)</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label">Engagement Tier</label>
+            <select id="tg-scope" class="form-select">
+              <option value="Starter Deployment">Starter Deployment</option>
+              <option value="Full Production Engine" selected>Full Production Engine</option>
+              <option value="Enterprise Architecture">Enterprise Architecture</option>
+              <option value="Monthly Retainer Advisory">Monthly Retainer Advisory</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label class="form-label">Your Name / Organization</label>
+            <input type="text" id="tg-client-name" class="form-input" placeholder="Elena Rostova (Acme Labs)" />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label">Your Telegram @Handle or Email</label>
+            <input type="text" id="tg-client-handle" class="form-input" placeholder="@elena_rostova" />
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label class="form-label">Estimated Budget</label>
+            <select id="tg-budget" class="form-select">
+              <option value="$2,500 - $5,000">$2,500 - $5,000</option>
+              <option value="$5,000 - $15,000" selected>$5,000 - $15,000</option>
+              <option value="$15,000 - $35,000">$15,000 - $35,000</option>
+              <option value="$35,000+ Enterprise">$35,000+ Enterprise</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label">Delivery Timeline</label>
+            <select id="tg-timeline" class="form-select">
+              <option value="Urgent (1-2 Weeks)">Urgent (1-2 Weeks)</option>
+              <option value="Standard (2-4 Weeks)" selected>Standard (2-4 Weeks)</option>
+              <option value="Quarterly Roadmap">Quarterly Roadmap</option>
+              <option value="Flexible Schedule">Flexible Schedule</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label">Project Requirements / Brief</label>
+          <textarea id="tg-notes" rows="2" class="form-textarea" placeholder="Detail tech stack preferences, design token requirements, or edge worker features..."></textarea>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label">Target Telegram Recipient Username</label>
+          <input type="text" id="tg-username" class="form-input" value="AlexandriaAdhamDev" placeholder="Username without @" />
+        </div>
+
+        <!-- Real-Time Payload Live Preview -->
+        <div>
+          <label class="form-label" style="display: flex; justify-content: space-between;">
+            <span>Live Telegram Order Payload Preview</span>
+            <span style="color: var(--accent-cyan); font-weight: normal;">Auto-generated</span>
+          </label>
+          <pre id="telegram-payload-preview" class="payload-preview-box"></pre>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="modal-actions">
+          <button id="open-telegram-btn" class="btn-open-telegram">
+            <span class="material-symbols-outlined" style="font-size: 18px;">send</span>
+            <span>🚀 Open in Telegram App</span>
+          </button>
+          <button id="copy-payload-btn" class="btn-copy-payload">
+            <span class="material-symbols-outlined" style="font-size: 18px;">content_copy</span>
+            <span>Copy Order Payload</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div style="display: flex; flex-direction: column; gap: 0.35rem;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent-emerald);"></span>
+          <span>PARIS / AMSTERDAM</span>
+          <span style="color: var(--border-subtle);">•</span>
+          <span class="font-mono" style="color: var(--text-main);">UTC+1</span>
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-muted);">
+          © 2025 AD / DevSign. Alexandria Editorial Design System. Zero-Build Cloudflare Pages Static Edition.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="footer-link">Dribbble</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="https://figma.com" target="_blank" rel="noopener noreferrer" class="footer-link">Figma</a>
+        <a href="https://t.me/AlexandriaAdhamDev" target="_blank" rel="noopener noreferrer" class="footer-link" style="color: #229ed9;">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ZERO-BUILD VANILLA JS SCRIPT -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
