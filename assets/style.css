@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Abbas IT Infrastructure & GLPI/ITSM Architecture - Global Stylesheet
+   Pure Vanilla CSS + Tailwind CDN compatibility
+   Engineered for Cloudflare Pages (Zero build step, 100% static)
+   ========================================================================== */
+
+/* Typography & Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root {
+  --color-surface: #0b1325;
+  --color-surface-lowest: #060e1f;
+  --color-surface-low: #131b2e;
+  --color-surface-container: #181f32;
+  --color-surface-high: #222a3d;
+  --color-surface-highest: #2d3448;
+  --color-surface-raised: #0F172A;
+  --color-primary: #ffb5a0;
+  --color-primary-container: #ea6944;
+  --color-on-primary: #601500;
+  --color-accent-hover: #E06D53;
+  --color-accent-glow: rgba(217, 93, 57, 0.25);
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #CBD5E1;
+  --color-text-muted: #94A3B8;
+  --color-text-dim: #64748B;
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border-hover: rgba(255, 255, 255, 0.18);
+  --telegram-color: #229ED9;
+  --telegram-hover: #1E88BE;
+}
+
+/* Base resets & behavior */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-surface);
+  color: #dbe2fb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* RTL Specific Rules */
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Preserve LTR for code, tech telemetry, emails, phone numbers & protocols */
+.code-ltr,
+.tech-ltr,
+.font-mono,
+[data-ltr-preserve] {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+  display: inline-block;
+  text-align: left;
+}
+
+/* Flip directional arrows in RTL mode */
+html[dir="rtl"] .flip-rtl {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .rtl-arrow-forward {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: rgba(24, 31, 50, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-panel-elevated {
+  background: rgba(34, 42, 61, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border-hover);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(234, 105, 68, 0.4);
+  box-shadow: 0 12px 32px -8px rgba(234, 105, 68, 0.18);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-lowest);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-highest);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-container);
+}
+
+/* Material Symbols styling */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+}
+
+/* Telegram badge button */
+.telegram-btn {
+  background: linear-gradient(135deg, #229ED9 0%, #157cb5 100%);
+  color: #ffffff;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(34, 158, 217, 0.3);
+}
+.telegram-btn:hover {
+  background: linear-gradient(135deg, #28a9e6 0%, #198ccb 100%);
+  box-shadow: 0 6px 24px rgba(34, 158, 217, 0.45);
+  transform: translateY(-1px);
+}
+
+/* Atmospheric Glow & Nodes */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.15; transform: scale(1); }
+  50% { opacity: 0.25; transform: scale(1.05); }
+}
+
+.ambient-glow {
+  animation: pulseGlow 8s ease-in-out infinite;
+}
+
+/* Modal Transitions */
+.modal-backdrop {
+  background: rgba(6, 14, 31, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: opacity 0.25s ease-out;
+}
+
+.modal-container {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-hidden .modal-container {
+  transform: scale(0.95) translateY(10px);
+}
+
+/* Responsive navigation drawer for mobile */
+#mobile-menu {
+  transition: max-height 0.35s ease-in-out, opacity 0.25s ease;
+}
